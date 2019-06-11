@@ -151,5 +151,6 @@
   
 	<modules>
 		<module>electronic-shop-eurekaserver</module>
+		<module>electronic-shop-common</module>
 	</modules>
 </project>
