@@ -7,4 +7,32 @@
   </parent>
   <artifactId>electronic-shop-common</artifactId>
   
+<!--   <build>
+		<pluginManagement>
+			<plugins>
+	    		<goal>build-info</goal>这个是必须的，否则要求main
+				<plugin>
+		                <groupId>org.springframework.boot</groupId>
+						<artifactId>spring-boot-maven-plugin</artifactId>
+		                <executions>
+		                    <execution>
+		                        <goals>
+		                            <goal>build-info</goal>
+		                        </goals>
+		                    </execution>
+		                </executions>
+		            </plugin>
+		            下面这段如果不加则会出带时间戳的jar
+		            <plugin>
+		                <artifactId>maven-compiler-plugin</artifactId>
+		                <configuration>
+		                    <target>${java.version}</target>
+		                    <source>${java.version}</source>
+		                    <encoding>UTF-8</encoding>
+		                </configuration>
+		            </plugin>
+			</plugins>
+		</pluginManagement>
+	</build>
+   -->
 </project>

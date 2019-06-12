@@ -145,7 +145,6 @@
     			<filtering>true</filtering>
     		</resource>
     	</resources>
-		<pluginManagement>
 			<plugins>
 				<!-- eureka info配置信息解析插件-->
 				<plugin>
@@ -157,28 +156,12 @@
 	    				</delimiters>
 	    			</configuration>
 	    		</plugin>
+	    		<!-- 这里引入了spring-boot-maven-plugin，打包时会去扫描项目main方法入口，也就是说引入该配置，你就必须在项目src/main/java/下创建一个spring-boot启动类 -->
 				<plugin>
 		                <groupId>org.springframework.boot</groupId>
 						<artifactId>spring-boot-maven-plugin</artifactId>
-		                <executions>
-		                    <execution>
-		                        <goals>
-		                            <goal>build-info</goal>
-		                        </goals>
-		                    </execution>
-		                </executions>
-		            </plugin>
-		            <!-- 下面这段如果不加则会出带时间戳的jar -->
-		            <plugin>
-		                <artifactId>maven-compiler-plugin</artifactId>
-		                <configuration>
-		                    <target>${java.version}</target>
-		                    <source>${java.version}</source>
-		                    <encoding>UTF-8</encoding>
-		                </configuration>
-		            </plugin>
+		        </plugin>
 			</plugins>
-		</pluginManagement>
 	</build>
 	<repositories>
 		<repository>
