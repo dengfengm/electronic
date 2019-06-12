@@ -1,10 +1,11 @@
 server:
-  port: 8761
+  port: 8001
+
 eureka:
   instance:
-    hostname: localhost
+    hostname: dengfeng1
   client:
-    registerWithEureka: false
-    fetchRegistry: false
-    serviceUrl:
-      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+    register-with-eureka: false
+    fetch-registry: false
+    service-url:
+      defaultZone: http://dengfeng2:8002/eureka/,http://dengfeng3:8003/eureka/

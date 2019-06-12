@@ -152,12 +152,12 @@ public class ReflectionUtils {
 
 	public static void main(String[] args) {
 		TestEntity testEntity = new TestEntity();
-		testEntity.setUserName("张三");
-		testEntity.setPhone("15921009245");
-		testEntity.setEmail("644064779@qq.com");
-		testEntity.setPassword("123456");
-		testEntity.setCreated(DateUtils.getTimestamp());
-		testEntity.setUpdated(DateUtils.getTimestamp());
+//		testEntity.setUserName("张三");
+//		testEntity.setPhone("15921009245");
+//		testEntity.setEmail("644064779@qq.com");
+//		testEntity.setPassword("123456");
+//		testEntity.setCreated(DateUtils.getTimestamp());
+//		testEntity.setUpdated(DateUtils.getTimestamp());
 		String filed = fatherAndSonField(testEntity);
 		String value = fatherAndSonFieldValue(testEntity);
 		// 封装sql

@@ -35,28 +35,28 @@ public class LogAspectServiceApi {
 		ServletRequestAttributes requestAttributes = (ServletRequestAttributes) RequestContextHolder
 				.getRequestAttributes();
 		HttpServletRequest request = requestAttributes.getRequest();
-		log.info("===============请求内容===============");
+//		log.info("===============请求内容===============");
 		try {
 			// 打印请求内容
-			log.info("请求地址:" + request.getRequestURL().toString());
-			log.info("请求方式:" + request.getMethod());
-			log.info("请求类方法:" + joinPoint.getSignature());
-			log.info("请求类方法参数:" + Arrays.toString(joinPoint.getArgs()));
+//			log.info("请求地址:" + request.getRequestURL().toString());
+//			log.info("请求方式:" + request.getMethod());
+//			log.info("请求类方法:" + joinPoint.getSignature());
+//			log.info("请求类方法参数:" + Arrays.toString(joinPoint.getArgs()));
 		} catch (Exception e) {
-			log.error("###LogAspectServiceApi.class methodBefore() ### ERROR:", e);
+//			log.error("###LogAspectServiceApi.class methodBefore() ### ERROR:", e);
 		}
-		log.info("===============请求内容===============");
+//		log.info("===============请求内容===============");
 	}
 
 	// 在方法执行完结后打印返回内容
 	@AfterReturning(returning = "o", pointcut = "controllerAspect()")
 	public void methodAfterReturing(Object o) {
-		log.info("--------------返回内容----------------");
+//		log.info("--------------返回内容----------------");
 		try {
-			log.info("Response内容:" + jsonObject.toJSONString(o));
+//			log.info("Response内容:" + jsonObject.toJSONString(o));
 		} catch (Exception e) {
-			log.error("###LogAspectServiceApi.class methodAfterReturing() ### ERROR:", e);
+//			log.error("###LogAspectServiceApi.class methodAfterReturing() ### ERROR:", e);
 		}
-		log.info("--------------返回内容----------------");
+//		log.info("--------------返回内容----------------");
 	}
 }

@@ -1,0 +1,11 @@
+server:
+  port: 8002
+
+eureka:
+  instance:
+    hostname: dengfeng2
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+    service-url:
+      defaultZone: http://dengfeng1:8001/eureka/,http://dengfeng3:8003/eureka/

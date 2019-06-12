@@ -72,8 +72,8 @@ public class BaseProvider {
 	public static void main(String[] args) {
 		Map<String, Object> map = new HashMap<>();
 		TestEntity baseEntity = new TestEntity();
-		baseEntity.setOpenId("12525");
-		baseEntity.setUpdated(DateUtils.getTimestamp());
+//		baseEntity.setOpenId("12525");
+//		baseEntity.setUpdated(DateUtils.getTimestamp());
 		map.put("oj", baseEntity);
 		map.put("table", "mb_user");
 		map.put("id", "1");
