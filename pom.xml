@@ -7,10 +7,10 @@
   	<packaging>pom</packaging>
   	<modules>
 		<module>electronic-shop-eurekaserver</module>
-		<module>electronic-shop-common</module>
-		<module>electronic-shop-api</module>
 		<module>electronic-shop-eurekaserver-o</module>
 		<module>electronic-shop-eurekaserver-t</module>
+		<module>electronic-shop-common</module>
+		<module>electronic-shop-api</module>
 		<module>electronic-shop-pay</module>
 	</modules>
 	
