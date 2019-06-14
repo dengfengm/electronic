@@ -4,7 +4,7 @@ server:
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://dengfeng1:8001/eureka/,http://dengfeng2:8002/eureka/,http://dengfeng3:8003/eureka/
+      defaultZone: http://dengfeng1:8001/eureka/ #,http://dengfeng2:8002/eureka/,http://dengfeng3:8003/eureka/
   instance:
      instance-id: springcloudelectronic
      #prefer-ip-address: true
@@ -16,8 +16,8 @@ spring:
   datasource:
         name: electronic
         type: com.alibaba.druid.pool.DruidDataSource # 使用druid数据源
-        driver-class-name: com.mysql.jdbc.Driver
-        url: jdbc:mysql://127.0.0.1:3306/shop
+        driver-class-name: com.mysql.cj.jdbc.Driver
+        url: jdbc:mysql://127.0.0.1:3306/shop?useSSL=false&useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC
         username: mengzj
         password: mengzj
         filters: stat
@@ -49,6 +49,10 @@ spring:
     #in-memory: true
     #pool:
       #enabled: false
+
+mybatis:
+   type-aliases-package: com.shop.electronic.payapi.entity
+   mapper-locations: classpath:mapper/*.xml
 
 info:
    version: $project.version$

@@ -8,8 +8,8 @@ import org.apache.ibatis.jdbc.SQL;
 
 import com.shop.electronic.common.entity.BaseEntity;
 import com.shop.electronic.common.entity.TestEntity;
-import com.shop.electronic.utils.DateUtils;
-import com.shop.electronic.utils.ReflectionUtils;
+import com.shop.electronic.common.utils.DateUtils;
+import com.shop.electronic.common.utils.ReflectionUtils;
 
 public class BaseProvider {
 

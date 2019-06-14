@@ -4,8 +4,7 @@ package com.shop.electronic.common.api;
 import java.util.HashMap;
 import java.util.Map;
 
-
-import com.shop.electronic.constants.BaseApiConstants;
+import com.shop.electronic.common.constants.BaseApiConstants;
 
 import lombok.extern.slf4j.Slf4j;
 

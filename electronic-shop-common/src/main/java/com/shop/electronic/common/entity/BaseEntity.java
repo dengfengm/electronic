@@ -3,11 +3,10 @@ package com.shop.electronic.common.entity;
 
 import java.sql.Timestamp;
 
-
+import javax.persistence.MappedSuperclass;
 
 import lombok.Getter;
 import lombok.Setter;
-import lombok.extern.slf4j.Slf4j;
 
 /**
  * 
@@ -19,14 +18,11 @@ import lombok.extern.slf4j.Slf4j;
  * @version: v1.0
  * @copyright:每特学院(蚂蚁课堂)上海每特教育科技有限公司
  */
+@MappedSuperclass
 @Getter
 @Setter
 public class BaseEntity {
 
-	/**
-	 * 主键
-	 */
-	private Long id;
 	/**
 	 * 创建时间
 	 */

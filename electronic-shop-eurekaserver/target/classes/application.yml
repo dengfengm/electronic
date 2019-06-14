@@ -8,4 +8,5 @@ eureka:
     register-with-eureka: false
     fetch-registry: false
     service-url:
-      defaultZone: http://dengfeng2:8002/eureka/,http://dengfeng3:8003/eureka/
+      defaultZone: http://dengfeng1:8001/eureka/
+      #defaultZone: http://dengfeng2:8002/eureka/,http://dengfeng3:8003/eureka/
