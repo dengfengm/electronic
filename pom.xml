@@ -14,6 +14,7 @@
 		<module>electronic-shop-api</module>
 		<module>electronic-shop-pay</module>
 		<module>electronic-shop-hystrixdashboard</module>
+		<module>electronic-shop-zuul</module>
   	</modules>
 	
     <parent>

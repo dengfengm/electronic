@@ -1,0 +1,33 @@
+server:
+  port: 9527
+  context-path: /pay-web
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://dengfeng1:8001/eureka/
+  instance:
+     instance-id: springcloudelectroniczuul
+
+zuul:
+  #prefix: /dengfeng #添加公共的前缀
+  ignored-services: "*" #关掉原有的服务请求名称 pay-service
+  routes:
+     pay-service: /shop/**
+     #pay-service1: /shop/**
+#zuul.routes.compute-service=/api-a/**
+#上面的一行等同于下面的两行
+#zuul.routes.api-a.path=/api-a/**
+#zuul.routes.api-a.serviceId=compute-service
+
+spring:
+  application:
+    name: electronic-zuul
+
+info:
+   version: $project.version$
+   artifactId: $project.artifactId$
+   name: "孟志军"
+   tel: "15135247658"
+   app: "electroniczuul"
+   status: "major"  
+   company: "www.dengfeng.com"

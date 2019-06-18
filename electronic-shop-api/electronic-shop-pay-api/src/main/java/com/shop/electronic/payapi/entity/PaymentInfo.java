@@ -12,8 +12,6 @@ import lombok.Setter;
 
 @Entity
 @Table(name="PAYMENT_INFO")
-@Getter
-@Setter
 public class PaymentInfo extends BaseEntity {
 	
 	/**
@@ -52,6 +50,54 @@ public class PaymentInfo extends BaseEntity {
 	 * 支付报文
 	 */
 	private String payMessage;
+	public String getPaymentInfoId() {
+		return paymentInfoId;
+	}
+	public void setPaymentInfoId(String paymentInfoId) {
+		this.paymentInfoId = paymentInfoId;
+	}
+	public String getTypeId() {
+		return typeId;
+	}
+	public void setTypeId(String typeId) {
+		this.typeId = typeId;
+	}
+	public String getOrderId() {
+		return orderId;
+	}
+	public void setOrderId(String orderId) {
+		this.orderId = orderId;
+	}
+	public String getPlatformorderId() {
+		return platformorderId;
+	}
+	public void setPlatformorderId(String platformorderId) {
+		this.platformorderId = platformorderId;
+	}
+	public String getPrice() {
+		return price;
+	}
+	public void setPrice(String price) {
+		this.price = price;
+	}
+	public String getSource() {
+		return source;
+	}
+	public void setSource(String source) {
+		this.source = source;
+	}
+	public Integer getState() {
+		return state;
+	}
+	public void setState(Integer state) {
+		this.state = state;
+	}
+	public String getPayMessage() {
+		return payMessage;
+	}
+	public void setPayMessage(String payMessage) {
+		this.payMessage = payMessage;
+	}
 
 
 }

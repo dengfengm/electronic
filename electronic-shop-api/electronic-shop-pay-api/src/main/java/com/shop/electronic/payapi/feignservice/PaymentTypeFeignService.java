@@ -10,7 +10,7 @@ import com.shop.electronic.payapi.feignfallback.PaymentTypeServiceFeignFallback;
 @FeignClient(value="pay-service",fallback=PaymentTypeServiceFeignFallback.class)
 public interface PaymentTypeFeignService {
 	
-	@GetMapping("/getPaymentType")
+	@GetMapping("/paytype/getPaymentType")
 	public PageDataOutput getPaymentType(@RequestParam("paymentTypeId") String paymentTypeId);
 
 }

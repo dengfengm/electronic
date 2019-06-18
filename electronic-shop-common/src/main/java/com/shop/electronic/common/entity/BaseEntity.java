@@ -19,8 +19,6 @@ import lombok.Setter;
  * @copyright:每特学院(蚂蚁课堂)上海每特教育科技有限公司
  */
 @MappedSuperclass
-@Getter
-@Setter
 public class BaseEntity {
 
 	/**
@@ -34,4 +32,18 @@ public class BaseEntity {
 //    public static void main(String[] args) {
 //		log.info("我在使用lomBok  自动生成 get 和set 方法 还有自动日志");
 //	}
+	public Timestamp getCreated() {
+		return created;
+	}
+	public void setCreated(Timestamp created) {
+		this.created = created;
+	}
+	public Timestamp getUpdated() {
+		return updated;
+	}
+	public void setUpdated(Timestamp updated) {
+		this.updated = updated;
+	}
+	
+	
 }

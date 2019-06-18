@@ -24,7 +24,7 @@ public interface PaymentInfoFeignService {
 	 * 
 	 * @return
 	 */
-	@PostMapping("/addPayInfoToken")
+	@PostMapping("/payinfo/addPayInfoToken")
 	public PageDataOutput addPayInfoToken(@RequestBody PaymentInfo paymentInfo);
 
 	/**
@@ -33,7 +33,7 @@ public interface PaymentInfoFeignService {
 	 * @param paymentInfo
 	 * @return
 	 */
-	@GetMapping("/getPayInfoToken")
+	@GetMapping("/payinfo/getPayInfoToken")
 	public PageDataOutput getPayInfoToken(@RequestParam("token") String token);
 
 	/**
@@ -42,7 +42,7 @@ public interface PaymentInfoFeignService {
 	 * @param paymentInfo
 	 * @return
 	 */
-	@GetMapping("/getByOrderIdPayInfo")
+	@GetMapping("/payinfo/getByOrderIdPayInfo")
 	public PageDataOutput getByOrderIdPayInfo(@RequestParam("orderId") String orderId);
 	
 	/**
@@ -51,6 +51,6 @@ public interface PaymentInfoFeignService {
 	 * @param paymentInfo
 	 * @return
 	 */
-	@PostMapping("/updatePayInfo")
+	@PostMapping("/payinfo/updatePayInfo")
 	public PageDataOutput updatePayInfo(@RequestBody PaymentInfo paymentInfo);
 }

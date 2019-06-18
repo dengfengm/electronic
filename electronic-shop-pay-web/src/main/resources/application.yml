@@ -1,0 +1,15 @@
+server:
+  port: 8768
+  context-path: /pay-web
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://dengfeng1:8001/eureka/
+
+feign:
+   hystrix:
+      enabled: true
+
+spring:
+  application:
+    name: pay-web
