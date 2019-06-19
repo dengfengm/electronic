@@ -1,0 +1,31 @@
+server:
+  port: 8888
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://dengfeng1:8001/eureka/ #,http://dengfeng2:8002/eureka/,http://dengfeng3:8003/eureka/
+  instance:
+     instance-id: electronicconfig
+      
+spring:
+  application:
+    name: electronic-config
+  cloud:
+    config:
+       server:
+          git:
+             uri: https://github.com/dengfengm/springcloudconfig/
+             searchPaths: respo
+             username: 
+             password: 
+       label: master
+       
+info:
+   version: $project.version$
+   artifactId: $project.artifactId$
+   name: "孟志军"
+   tel: "15135247658"
+   app: "electroniczuul"
+   status: "major"  
+   company: "www.dengfeng.com"
