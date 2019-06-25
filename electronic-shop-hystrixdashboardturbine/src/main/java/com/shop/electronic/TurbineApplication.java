@@ -5,6 +5,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.circuitbreaker.EnableCircuitBreaker;
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 import org.springframework.cloud.netflix.hystrix.dashboard.EnableHystrixDashboard;
+import org.springframework.cloud.netflix.turbine.EnableTurbine;
 
 /**
  * 
@@ -19,10 +20,11 @@ import org.springframework.cloud.netflix.hystrix.dashboard.EnableHystrixDashboar
 @EnableEurekaClient
 @EnableCircuitBreaker //监控来自Feign内部断路器的监控数据
 @EnableHystrixDashboard
-public class HystrixDashBoardApplication {
+@EnableTurbine
+public class TurbineApplication {
 
 	 public static void main(String[] args) {
-		 SpringApplication.run(HystrixDashBoardApplication.class, args);
+		 SpringApplication.run(TurbineApplication.class, args);
 	}
 	
 }

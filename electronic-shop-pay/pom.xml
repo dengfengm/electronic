@@ -41,6 +41,11 @@
 			<artifactId>mapper-spring-boot-starter</artifactId>
 			<version>1.1.1</version>
 		</dependency>
+		<!-- actuator监控信息完善 -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-actuator</artifactId>
+		</dependency>
 		<!-- 热部署配置 -->
 	  	<dependency>
 	  		<groupId>org.springframework</groupId>

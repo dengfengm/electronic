@@ -1,0 +1,34 @@
+server:
+  port: 9009
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://dengfeng1:8001/eureka/
+  instance:
+    instance-id: springcloud-turbine
+spring:
+  application:
+    name: hystrix-dashBoard-turbine
+
+turbine:
+   app-config: pay-service
+   aggregator:
+      cluster-config: default  #使用http://dengfeng1:9009/turbine.stream 访问
+   cluster-name-expression: new String("default")
+
+#暴露全部的监控信息
+management:
+   endpoints:
+      web:
+         exposure:
+            include: "*"
+
+info:
+   version: $project.version$
+   artifactId: $project.artifactId$
+   name: "孟志军"
+   tel: "15135247658"
+   app: "electronic"
+   status: "major"  
+   company: "www.dengfeng.com"

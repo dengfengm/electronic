@@ -1,2 +1,11 @@
 server:
   port: 9003
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://dengfeng1:8001/eureka/
+
+spring:
+  application:
+    name: hystrix-dashBoard

@@ -16,6 +16,7 @@
 		<module>electronic-shop-hystrixdashboard</module>
 		<module>electronic-shop-zuul</module>
 		<module>electronic-shop-config</module>
+		<module>electronic-shop-hystrixdashboardturbine</module>
   	</modules>
 	
     <parent>
@@ -35,7 +36,7 @@
 			<dependency>
 				<groupId>org.springframework.cloud</groupId>
 				<artifactId>spring-cloud-dependencies</artifactId>
-				<version>Camden.SR5</version><!-- springcloud 依賴版本 -->
+				<version>Edgware.SR3</version><!-- springcloud 依賴版本 -->
 				<type>pom</type>
 				<scope>import</scope>
 			</dependency>

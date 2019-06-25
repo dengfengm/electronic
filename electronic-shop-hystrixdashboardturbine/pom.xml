@@ -5,10 +5,18 @@
     <artifactId>electronic-shop-parent</artifactId>
     <version>0.0.1-SNAPSHOT</version>
   </parent>
-  <artifactId>electronic-shop-hystrixdashboard</artifactId>
-  
+  <artifactId>electronic-shop-hystrixdashboardturbine</artifactId>
   
   <dependencies>
+  		<!-- turbine相关  -->
+        <dependency> 
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-turbine</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-netflix-turbine</artifactId>
+        </dependency>
   		<!-- hystrix和 hystrix-dashboard相关 -->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
@@ -18,15 +26,19 @@
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-hystrix-dashboard</artifactId>
         </dependency>
-        <!-- actuator监控信息完善 -->
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-actuator</artifactId>
-		</dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-actuator</artifactId>
+        </dependency>
         <!-- eureka-server 客戶端 -->
   		<dependency>
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-eureka</artifactId>
+		</dependency>
+		<!-- actuator监控信息完善 -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-actuator</artifactId>
 		</dependency>
         <!-- 修改后立即生效，热部署 -->
         <dependency>
